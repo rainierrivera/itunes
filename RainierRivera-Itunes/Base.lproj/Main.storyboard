@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aHN-5a-r6c">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Track List View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="TrackListViewController" customModule="RainierRivera_Itunes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="pFh-Wm-IWf">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="KZO-s1-O5w">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TrackCollectionViewCell" id="IDj-yt-cS2">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="aEn-yP-vMP">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="pFh-Wm-IWf" secondAttribute="bottom" id="Btb-PF-GXj"/>
+                            <constraint firstItem="pFh-Wm-IWf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="OvK-bh-Olh"/>
+                            <constraint firstAttribute="trailing" secondItem="pFh-Wm-IWf" secondAttribute="trailing" id="dKo-b7-XiH"/>
+                            <constraint firstItem="pFh-Wm-IWf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xgs-Ja-nGH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="mfY-Dr-c38">
+                        <barButtonItem key="rightBarButtonItem" title="Favourite" id="2zl-vM-IMX">
+                            <connections>
+                                <action selector="favouriteAction:" destination="BYZ-38-t0r" id="jMG-jU-mcC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="collectionView" destination="pFh-Wm-IWf" id="1wM-zf-6cQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="366" y="-1039"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="3bV-Zt-9pg">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" id="bgO-cb-3bC" customClass="DetailViewController" customModule="RainierRivera_Itunes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6QL-Dg-h5Z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please select track" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sPF-Sw-62d">
+                                <rect key="frame" x="16" y="343" width="343" height="25"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="a5w-Xl-BTX" firstAttribute="trailing" secondItem="sPF-Sw-62d" secondAttribute="trailing" constant="16" id="2xf-zw-4Ga"/>
+                            <constraint firstItem="sPF-Sw-62d" firstAttribute="leading" secondItem="a5w-Xl-BTX" secondAttribute="leading" constant="16" id="IpX-IH-sGZ"/>
+                            <constraint firstItem="sPF-Sw-62d" firstAttribute="centerY" secondItem="a5w-Xl-BTX" secondAttribute="centerY" id="ZGk-o7-34L"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="a5w-Xl-BTX"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="WDg-2E-66O"/>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="sPF-Sw-62d" id="gIz-UC-kOy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t0I-hi-txe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="476" y="-351.27436281859076"/>
+        </scene>
+        <!--Favourites View Controller-->
+        <scene sceneID="dYt-3L-67F">
+            <objects>
+                <viewController storyboardIdentifier="FavouritesViewController" id="iZk-NG-lYC" customClass="FavouritesViewController" customModule="RainierRivera_Itunes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sGA-hZ-2OG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nY0-u3-LNc">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="nY0-u3-LNc" secondAttribute="bottom" id="Ya9-8C-jBw"/>
+                            <constraint firstItem="nY0-u3-LNc" firstAttribute="top" secondItem="Mqs-tQ-duC" secondAttribute="top" id="bP3-eq-vM9"/>
+                            <constraint firstItem="nY0-u3-LNc" firstAttribute="leading" secondItem="Mqs-tQ-duC" secondAttribute="leading" id="k2B-gQ-QJd"/>
+                            <constraint firstItem="Mqs-tQ-duC" firstAttribute="trailing" secondItem="nY0-u3-LNc" secondAttribute="trailing" id="t5o-FD-VPl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Mqs-tQ-duC"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="nY0-u3-LNc" id="vGB-Q5-ADt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O55-62-JXo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1321" y="-351"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8qb-lD-0dH">
+            <objects>
+                <navigationController id="fal-pE-Jck" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QOM-Ew-KKV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="pz8-dA-woK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hEr-lo-Lvz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-463" y="-1039"/>
+        </scene>
+        <!--Split View Controller-->
+        <scene sceneID="7S0-Ru-1IR">
+            <objects>
+                <splitViewController id="aHN-5a-r6c" customClass="SplitViewController" customModule="RainierRivera_Itunes" customModuleProvider="target" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="fal-pE-Jck" kind="relationship" relationship="masterViewController" id="cFC-WG-1dk"/>
+                        <segue destination="DqE-gl-RFZ" kind="relationship" relationship="detailViewController" id="Ah9-6X-Q5A"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8WP-VR-LMm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1417" y="-707"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="QM6-Ek-Osz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DqE-gl-RFZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ztZ-DG-pIu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bgO-cb-3bC" kind="relationship" relationship="rootViewController" id="buP-ha-3LY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QNY-V7-dnj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-463.19999999999999" y="-351.27436281859076"/>
+        </scene>
+    </scenes>
+</document>

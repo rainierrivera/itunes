@@ -1,0 +1,757 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B0E5492120B2C6B84863D29 /* Pods_RainierRivera_ItunesTests2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3099F6C68E3B71313E2A70CE /* Pods_RainierRivera_ItunesTests2.framework */; };
+		58502BFBAB5184D8AFABA736 /* Pods_RainierRivera_Itunes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46083D19FD50F170C7EA9902 /* Pods_RainierRivera_Itunes.framework */; };
+		C15FD53D2337687700E87291 /* TrackListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15FD53C2337687700E87291 /* TrackListViewModel.swift */; };
+		C15FD541233768B900E87291 /* FavouriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15FD540233768B900E87291 /* FavouriteViewModel.swift */; };
+		C15FD544233768F000E87291 /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15FD543233768F000E87291 /* AppManager.swift */; };
+		C15FD5462337690D00E87291 /* FavouriteTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15FD5452337690D00E87291 /* FavouriteTrack.swift */; };
+		C15FD5492337693D00E87291 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15FD5482337693D00E87291 /* DetailViewModel.swift */; };
+		C15FD54C2337705000E87291 /* TrackFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15FD54B2337705000E87291 /* TrackFactory.swift */; };
+		C15FD54E2337707B00E87291 /* MockItunesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15FD54D2337707B00E87291 /* MockItunesAPI.swift */; };
+		C1893C892335D51600250C38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1893C882335D51600250C38 /* AppDelegate.swift */; };
+		C1893C8B2335D51600250C38 /* TrackListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1893C8A2335D51600250C38 /* TrackListViewController.swift */; };
+		C1893C8E2335D51600250C38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1893C8C2335D51600250C38 /* Main.storyboard */; };
+		C1893C902335D51800250C38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1893C8F2335D51800250C38 /* Assets.xcassets */; };
+		C1893C932335D51800250C38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1893C912335D51800250C38 /* LaunchScreen.storyboard */; };
+		C1893CB82335D53E00250C38 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1893CB62335D53E00250C38 /* NetworkService.swift */; };
+		C1893CB92335D53E00250C38 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1893CB72335D53E00250C38 /* BaseRequest.swift */; };
+		C1893CBC2335D67D00250C38 /* ItunesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1893CBB2335D67D00250C38 /* ItunesRequest.swift */; };
+		C1893CBE2335D99B00250C38 /* TrackResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1893CBD2335D99B00250C38 /* TrackResponse.swift */; };
+		C1893CC02335D9CB00250C38 /* ItunesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1893CBF2335D9CB00250C38 /* ItunesService.swift */; };
+		C1893CC22335D9F000250C38 /* ItunesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1893CC12335D9F000250C38 /* ItunesAPI.swift */; };
+		C1893CC42335E08300250C38 /* string+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1893CC32335E08300250C38 /* string+extension.swift */; };
+		C1893CC72335E10A00250C38 /* TrackTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1893CC52335E10A00250C38 /* TrackTableViewCell.swift */; };
+		C1893CC92335E60F00250C38 /* TrackTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1893CC62335E10A00250C38 /* TrackTableViewCell.xib */; };
+		C1BA142023C4B68500EDEBF0 /* TrackCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BA141E23C4B68500EDEBF0 /* TrackCollectionViewCell.swift */; };
+		C1BA142123C4B68500EDEBF0 /* TrackCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1BA141F23C4B68500EDEBF0 /* TrackCollectionViewCell.xib */; };
+		C1BC16E4233766B500452C29 /* TrackListViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BC16E1233766A300452C29 /* TrackListViewModelSpec.swift */; };
+		C1FD80FB23372F9D002CE034 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FD80FA23372F9D002CE034 /* DetailViewController.swift */; };
+		C1FD80FD23373341002CE034 /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FD80FC23373341002CE034 /* FavouritesViewController.swift */; };
+		C1FD80FF23374466002CE034 /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FD80FE23374466002CE034 /* SplitViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C1FD810F233764D9002CE034 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C1893C7D2335D51600250C38 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C1893C842335D51600250C38;
+			remoteInfo = "RainierRivera-Itunes";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0992B9AC670D4B8B3FED2D1B /* Pods-RainierRivera-ItunesTests2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainierRivera-ItunesTests2.release.xcconfig"; path = "Target Support Files/Pods-RainierRivera-ItunesTests2/Pods-RainierRivera-ItunesTests2.release.xcconfig"; sourceTree = "<group>"; };
+		3099F6C68E3B71313E2A70CE /* Pods_RainierRivera_ItunesTests2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RainierRivera_ItunesTests2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		46083D19FD50F170C7EA9902 /* Pods_RainierRivera_Itunes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RainierRivera_Itunes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A1E845D52F1CFB39317F2FC /* Pods-RainierRivera-ItunesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainierRivera-ItunesTests.release.xcconfig"; path = "Target Support Files/Pods-RainierRivera-ItunesTests/Pods-RainierRivera-ItunesTests.release.xcconfig"; sourceTree = "<group>"; };
+		9DE119C540D6D0D4FD4692E0 /* Pods-RainierRivera-Itunes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainierRivera-Itunes.debug.xcconfig"; path = "Target Support Files/Pods-RainierRivera-Itunes/Pods-RainierRivera-Itunes.debug.xcconfig"; sourceTree = "<group>"; };
+		A106CE89A447AF088480B10B /* Pods-RainierRivera-ItunesTests2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainierRivera-ItunesTests2.debug.xcconfig"; path = "Target Support Files/Pods-RainierRivera-ItunesTests2/Pods-RainierRivera-ItunesTests2.debug.xcconfig"; sourceTree = "<group>"; };
+		A5F0054F4B9EF24E6C78797F /* Pods_RainierRivera_ItunesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RainierRivera_ItunesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C15FD53C2337687700E87291 /* TrackListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackListViewModel.swift; sourceTree = "<group>"; };
+		C15FD540233768B900E87291 /* FavouriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteViewModel.swift; sourceTree = "<group>"; };
+		C15FD543233768F000E87291 /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
+		C15FD5452337690D00E87291 /* FavouriteTrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteTrack.swift; sourceTree = "<group>"; };
+		C15FD5482337693D00E87291 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		C15FD54B2337705000E87291 /* TrackFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackFactory.swift; sourceTree = "<group>"; };
+		C15FD54D2337707B00E87291 /* MockItunesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockItunesAPI.swift; sourceTree = "<group>"; };
+		C1893C852335D51600250C38 /* RainierRivera-Itunes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RainierRivera-Itunes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1893C882335D51600250C38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C1893C8A2335D51600250C38 /* TrackListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackListViewController.swift; sourceTree = "<group>"; };
+		C1893C8D2335D51600250C38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C1893C8F2335D51800250C38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C1893C922335D51800250C38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C1893C942335D51800250C38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1893CAA2335D51800250C38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1893CB62335D53E00250C38 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		C1893CB72335D53E00250C38 /* BaseRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
+		C1893CBB2335D67D00250C38 /* ItunesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesRequest.swift; sourceTree = "<group>"; };
+		C1893CBD2335D99B00250C38 /* TrackResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackResponse.swift; sourceTree = "<group>"; };
+		C1893CBF2335D9CB00250C38 /* ItunesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesService.swift; sourceTree = "<group>"; };
+		C1893CC12335D9F000250C38 /* ItunesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesAPI.swift; sourceTree = "<group>"; };
+		C1893CC32335E08300250C38 /* string+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "string+extension.swift"; sourceTree = "<group>"; };
+		C1893CC52335E10A00250C38 /* TrackTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackTableViewCell.swift; sourceTree = "<group>"; };
+		C1893CC62335E10A00250C38 /* TrackTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrackTableViewCell.xib; sourceTree = "<group>"; };
+		C1BA141E23C4B68500EDEBF0 /* TrackCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCollectionViewCell.swift; sourceTree = "<group>"; };
+		C1BA141F23C4B68500EDEBF0 /* TrackCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrackCollectionViewCell.xib; sourceTree = "<group>"; };
+		C1BC16E1233766A300452C29 /* TrackListViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackListViewModelSpec.swift; sourceTree = "<group>"; };
+		C1FD80FA23372F9D002CE034 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		C1FD80FC23373341002CE034 /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
+		C1FD80FE23374466002CE034 /* SplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
+		C1FD810A233764D9002CE034 /* RainierRivera-ItunesTests2.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RainierRivera-ItunesTests2.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1FD810E233764D9002CE034 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF291A3A673581075416A601 /* Pods-RainierRivera-ItunesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainierRivera-ItunesTests.debug.xcconfig"; path = "Target Support Files/Pods-RainierRivera-ItunesTests/Pods-RainierRivera-ItunesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F7DAD98CF872BAE1B70BD631 /* Pods-RainierRivera-Itunes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainierRivera-Itunes.release.xcconfig"; path = "Target Support Files/Pods-RainierRivera-Itunes/Pods-RainierRivera-Itunes.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C1893C822335D51600250C38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58502BFBAB5184D8AFABA736 /* Pods_RainierRivera_Itunes.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1FD8107233764D9002CE034 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B0E5492120B2C6B84863D29 /* Pods_RainierRivera_ItunesTests2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A7E63F8F66C43144BF4DA0E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46083D19FD50F170C7EA9902 /* Pods_RainierRivera_Itunes.framework */,
+				A5F0054F4B9EF24E6C78797F /* Pods_RainierRivera_ItunesTests.framework */,
+				3099F6C68E3B71313E2A70CE /* Pods_RainierRivera_ItunesTests2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB2320BF5D9CFBB43B640D1D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9DE119C540D6D0D4FD4692E0 /* Pods-RainierRivera-Itunes.debug.xcconfig */,
+				F7DAD98CF872BAE1B70BD631 /* Pods-RainierRivera-Itunes.release.xcconfig */,
+				CF291A3A673581075416A601 /* Pods-RainierRivera-ItunesTests.debug.xcconfig */,
+				9A1E845D52F1CFB39317F2FC /* Pods-RainierRivera-ItunesTests.release.xcconfig */,
+				A106CE89A447AF088480B10B /* Pods-RainierRivera-ItunesTests2.debug.xcconfig */,
+				0992B9AC670D4B8B3FED2D1B /* Pods-RainierRivera-ItunesTests2.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C15FD53A2337684900E87291 /* ItunesAPI */ = {
+			isa = PBXGroup;
+			children = (
+				C1893CC12335D9F000250C38 /* ItunesAPI.swift */,
+				C1893CBF2335D9CB00250C38 /* ItunesService.swift */,
+				C1893CBB2335D67D00250C38 /* ItunesRequest.swift */,
+				C15FD54D2337707B00E87291 /* MockItunesAPI.swift */,
+			);
+			path = ItunesAPI;
+			sourceTree = "<group>";
+		};
+		C15FD53B2337686400E87291 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C15FD5452337690D00E87291 /* FavouriteTrack.swift */,
+				C1893CBD2335D99B00250C38 /* TrackResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C15FD53E2337689500E87291 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C15FD5482337693D00E87291 /* DetailViewModel.swift */,
+				C15FD53C2337687700E87291 /* TrackListViewModel.swift */,
+				C15FD540233768B900E87291 /* FavouriteViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C15FD53F233768A800E87291 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C1FD80FE23374466002CE034 /* SplitViewController.swift */,
+				C1893C8A2335D51600250C38 /* TrackListViewController.swift */,
+				C1FD80FC23373341002CE034 /* FavouritesViewController.swift */,
+				C1FD80FA23372F9D002CE034 /* DetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C15FD542233768E100E87291 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				C15FD543233768F000E87291 /* AppManager.swift */,
+				C15FD54B2337705000E87291 /* TrackFactory.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		C15FD5472337692400E87291 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C1893CC32335E08300250C38 /* string+extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C15FD54A2337695A00E87291 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C1893CC52335E10A00250C38 /* TrackTableViewCell.swift */,
+				C1893CC62335E10A00250C38 /* TrackTableViewCell.xib */,
+				C1BA141E23C4B68500EDEBF0 /* TrackCollectionViewCell.swift */,
+				C1BA141F23C4B68500EDEBF0 /* TrackCollectionViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C1893C7C2335D51600250C38 = {
+			isa = PBXGroup;
+			children = (
+				C1893C872335D51600250C38 /* RainierRivera-Itunes */,
+				C1893CA72335D51800250C38 /* RainierRivera-ItunesUITests */,
+				C1FD810B233764D9002CE034 /* RainierRivera-ItunesTests2 */,
+				C1893C862335D51600250C38 /* Products */,
+				AB2320BF5D9CFBB43B640D1D /* Pods */,
+				A7E63F8F66C43144BF4DA0E3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C1893C862335D51600250C38 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C1893C852335D51600250C38 /* RainierRivera-Itunes.app */,
+				C1FD810A233764D9002CE034 /* RainierRivera-ItunesTests2.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C1893C872335D51600250C38 /* RainierRivera-Itunes */ = {
+			isa = PBXGroup;
+			children = (
+				C15FD54A2337695A00E87291 /* View */,
+				C15FD5472337692400E87291 /* Extensions */,
+				C15FD542233768E100E87291 /* Utility */,
+				C15FD53F233768A800E87291 /* Controller */,
+				C15FD53E2337689500E87291 /* ViewModel */,
+				C15FD53B2337686400E87291 /* Model */,
+				C1BC16E02337668A00452C29 /* Spec */,
+				C1893CBA2335D54500250C38 /* Network */,
+				C1893C882335D51600250C38 /* AppDelegate.swift */,
+				C1893C8C2335D51600250C38 /* Main.storyboard */,
+				C1893C8F2335D51800250C38 /* Assets.xcassets */,
+				C1893C912335D51800250C38 /* LaunchScreen.storyboard */,
+				C1893C942335D51800250C38 /* Info.plist */,
+			);
+			path = "RainierRivera-Itunes";
+			sourceTree = "<group>";
+		};
+		C1893CA72335D51800250C38 /* RainierRivera-ItunesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C1893CAA2335D51800250C38 /* Info.plist */,
+			);
+			path = "RainierRivera-ItunesUITests";
+			sourceTree = "<group>";
+		};
+		C1893CBA2335D54500250C38 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C15FD53A2337684900E87291 /* ItunesAPI */,
+				C1893CB72335D53E00250C38 /* BaseRequest.swift */,
+				C1893CB62335D53E00250C38 /* NetworkService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		C1BC16E02337668A00452C29 /* Spec */ = {
+			isa = PBXGroup;
+			children = (
+				C1BC16E1233766A300452C29 /* TrackListViewModelSpec.swift */,
+			);
+			path = Spec;
+			sourceTree = "<group>";
+		};
+		C1FD810B233764D9002CE034 /* RainierRivera-ItunesTests2 */ = {
+			isa = PBXGroup;
+			children = (
+				C1FD810E233764D9002CE034 /* Info.plist */,
+			);
+			path = "RainierRivera-ItunesTests2";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C1893C842335D51600250C38 /* RainierRivera-Itunes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1893CAD2335D51800250C38 /* Build configuration list for PBXNativeTarget "RainierRivera-Itunes" */;
+			buildPhases = (
+				4F422E547A51BDCF601F8573 /* [CP] Check Pods Manifest.lock */,
+				C1893C812335D51600250C38 /* Sources */,
+				C1893C822335D51600250C38 /* Frameworks */,
+				C1893C832335D51600250C38 /* Resources */,
+				B62A9ABFF68CD5B0DD53615D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RainierRivera-Itunes";
+			productName = "RainierRivera-Itunes";
+			productReference = C1893C852335D51600250C38 /* RainierRivera-Itunes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C1FD8109233764D9002CE034 /* RainierRivera-ItunesTests2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1FD8111233764D9002CE034 /* Build configuration list for PBXNativeTarget "RainierRivera-ItunesTests2" */;
+			buildPhases = (
+				74DD199D8CB1673887866260 /* [CP] Check Pods Manifest.lock */,
+				C1FD8106233764D9002CE034 /* Sources */,
+				C1FD8107233764D9002CE034 /* Frameworks */,
+				C1FD8108233764D9002CE034 /* Resources */,
+				9DFF30D2A2A13C167BDCE7DF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C1FD8110233764D9002CE034 /* PBXTargetDependency */,
+			);
+			name = "RainierRivera-ItunesTests2";
+			productName = "RainierRivera-ItunesTests2";
+			productReference = C1FD810A233764D9002CE034 /* RainierRivera-ItunesTests2.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C1893C7D2335D51600250C38 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Rainier Rivera";
+				TargetAttributes = {
+					C1893C842335D51600250C38 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					C1FD8109233764D9002CE034 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = C1893C842335D51600250C38;
+					};
+				};
+			};
+			buildConfigurationList = C1893C802335D51600250C38 /* Build configuration list for PBXProject "RainierRivera-Itunes" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C1893C7C2335D51600250C38;
+			productRefGroup = C1893C862335D51600250C38 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C1893C842335D51600250C38 /* RainierRivera-Itunes */,
+				C1FD8109233764D9002CE034 /* RainierRivera-ItunesTests2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C1893C832335D51600250C38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1893C932335D51800250C38 /* LaunchScreen.storyboard in Resources */,
+				C1893C902335D51800250C38 /* Assets.xcassets in Resources */,
+				C1BA142123C4B68500EDEBF0 /* TrackCollectionViewCell.xib in Resources */,
+				C1893C8E2335D51600250C38 /* Main.storyboard in Resources */,
+				C1893CC92335E60F00250C38 /* TrackTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1FD8108233764D9002CE034 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4F422E547A51BDCF601F8573 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RainierRivera-Itunes-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74DD199D8CB1673887866260 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RainierRivera-ItunesTests2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DFF30D2A2A13C167BDCE7DF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RainierRivera-ItunesTests2/Pods-RainierRivera-ItunesTests2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RainierRivera-ItunesTests2/Pods-RainierRivera-ItunesTests2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RainierRivera-ItunesTests2/Pods-RainierRivera-ItunesTests2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B62A9ABFF68CD5B0DD53615D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RainierRivera-Itunes/Pods-RainierRivera-Itunes-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RainierRivera-Itunes/Pods-RainierRivera-Itunes-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RainierRivera-Itunes/Pods-RainierRivera-Itunes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C1893C812335D51600250C38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1FD80FD23373341002CE034 /* FavouritesViewController.swift in Sources */,
+				C1FD80FB23372F9D002CE034 /* DetailViewController.swift in Sources */,
+				C1893CC02335D9CB00250C38 /* ItunesService.swift in Sources */,
+				C1893CB92335D53E00250C38 /* BaseRequest.swift in Sources */,
+				C1893C8B2335D51600250C38 /* TrackListViewController.swift in Sources */,
+				C1893CBE2335D99B00250C38 /* TrackResponse.swift in Sources */,
+				C15FD54E2337707B00E87291 /* MockItunesAPI.swift in Sources */,
+				C1893CC22335D9F000250C38 /* ItunesAPI.swift in Sources */,
+				C15FD544233768F000E87291 /* AppManager.swift in Sources */,
+				C15FD5462337690D00E87291 /* FavouriteTrack.swift in Sources */,
+				C1893CC72335E10A00250C38 /* TrackTableViewCell.swift in Sources */,
+				C1893CC42335E08300250C38 /* string+extension.swift in Sources */,
+				C1FD80FF23374466002CE034 /* SplitViewController.swift in Sources */,
+				C1893CB82335D53E00250C38 /* NetworkService.swift in Sources */,
+				C15FD5492337693D00E87291 /* DetailViewModel.swift in Sources */,
+				C15FD541233768B900E87291 /* FavouriteViewModel.swift in Sources */,
+				C1BA142023C4B68500EDEBF0 /* TrackCollectionViewCell.swift in Sources */,
+				C1893CBC2335D67D00250C38 /* ItunesRequest.swift in Sources */,
+				C15FD54C2337705000E87291 /* TrackFactory.swift in Sources */,
+				C1893C892335D51600250C38 /* AppDelegate.swift in Sources */,
+				C15FD53D2337687700E87291 /* TrackListViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1FD8106233764D9002CE034 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1BC16E4233766B500452C29 /* TrackListViewModelSpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C1FD8110233764D9002CE034 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C1893C842335D51600250C38 /* RainierRivera-Itunes */;
+			targetProxy = C1FD810F233764D9002CE034 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C1893C8C2335D51600250C38 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1893C8D2335D51600250C38 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C1893C912335D51800250C38 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1893C922335D51800250C38 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C1893CAB2335D51800250C38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C1893CAC2335D51800250C38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C1893CAE2335D51800250C38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DE119C540D6D0D4FD4692E0 /* Pods-RainierRivera-Itunes.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "RainierRivera-Itunes/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "rainierrivera.RainierRivera-Itunes";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C1893CAF2335D51800250C38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7DAD98CF872BAE1B70BD631 /* Pods-RainierRivera-Itunes.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "RainierRivera-Itunes/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "rainierrivera.RainierRivera-Itunes";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C1FD8112233764D9002CE034 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A106CE89A447AF088480B10B /* Pods-RainierRivera-ItunesTests2.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "RainierRivera-ItunesTests2/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "rainierrivera.RainierRivera-ItunesTests2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RainierRivera-Itunes.app/RainierRivera-Itunes";
+			};
+			name = Debug;
+		};
+		C1FD8113233764D9002CE034 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0992B9AC670D4B8B3FED2D1B /* Pods-RainierRivera-ItunesTests2.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "RainierRivera-ItunesTests2/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "rainierrivera.RainierRivera-ItunesTests2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RainierRivera-Itunes.app/RainierRivera-Itunes";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C1893C802335D51600250C38 /* Build configuration list for PBXProject "RainierRivera-Itunes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1893CAB2335D51800250C38 /* Debug */,
+				C1893CAC2335D51800250C38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1893CAD2335D51800250C38 /* Build configuration list for PBXNativeTarget "RainierRivera-Itunes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1893CAE2335D51800250C38 /* Debug */,
+				C1893CAF2335D51800250C38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1FD8111233764D9002CE034 /* Build configuration list for PBXNativeTarget "RainierRivera-ItunesTests2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1FD8112233764D9002CE034 /* Debug */,
+				C1FD8113233764D9002CE034 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C1893C7D2335D51600250C38 /* Project object */;
+}
